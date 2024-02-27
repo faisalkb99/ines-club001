@@ -10,7 +10,7 @@ margin: 0;
   
 }
 body{
-  background-color: white;
+
   margin: 0;
   height: 5000px;
 
@@ -55,29 +55,91 @@ body{
 
 
 .carousel-inner {
-  height: 70vh; /* Set the desired height for the carousel */
+  height: 55vh; /* Set the desired height for the carousel */
+  margin-top: 5rem;
 }
 
 .img-carousel {
+
+  border-radius: 20px;
  
-  width: 100vw;
-  height: 80vh;
+  width: 90vw;
+  height: 55vh;
   margin: 0 auto; /* Center the images horizontally */
 }
 
 @media (max-width: 576px) {
+  .img-carousel {
+    border-radius: 15px;
+    width: 88vw;
+    height: 40vh;
+    margin: 0 auto; /* Center the images horizontally */
+  }
   .carousel-inner {
-    height: 70vh; /* Adjust the height for smaller screens */
+    height: 40vh; /* Adjust the height for smaller screens */
   }
 }
 
+@media (max-width: 576px){
 
-.gg{
-  margin-bottom: 5rem;
+  .gg{
+    
+    height: 5vh;
+  }
+
+}
+
+
+.testimonial-img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.testimonial-item {
+  border-radius: 5px;
+  padding: 20px;
+  height: 40vh;
+  width: 30vw;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.carousel-indicators {
+  bottom: -90px;
+}
+
+.carousel-indicators li {
+  background-color: #21de3d;
+  border-radius: 100%;
+  width: 10px;
+  height: 10px;
+}
+
+.carousel-indicators .active {
+  background-color: #12af4e;
 }
 
 
 
 
+.card-with-bg {
+  background-image: url('../assets/cards02.png'); /* Background image for the card */
+  /* Stretches image to cover card */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat;
+  color: white; /* Text color for readability */
+  overflow: hidden; /* Prevents content overflow */
+  border-radius: 35px; /* Rounded corners */
+  padding: 20px; /* Adjust as needed for spacing */
+}
 
 
+.card-img-top {
+  /* Since you want the background image to cover the card, we'll remove these stylings for individual card images */
+  margin: 0 auto;
+   width: 150px;
+   height: 150px; 
+   object-fit: cover; 
+}
